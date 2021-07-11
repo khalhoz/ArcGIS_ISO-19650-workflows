@@ -1,0 +1,24 @@
+{"title": "Categories", 
+    "categories": [
+    {"title": "WIP", "categories": [
+        {"title": "S0", "categories": []}]}, 
+
+    {"title": "Shared (non-contractual)", "categories": [
+        {"title": "S1 - Suitable for coordination", "categories": []}, 
+        {"title": "S2 - Suitable for information", "categories": []}, 
+        {"title": "S3 - Suitable for review and comment", "categories": []}, 
+        {"title": "S4 - Suitable for stage approval", "categories": []}, 
+        {"title": "S6 - Suitable for PIM authorization", "categories": []}, 
+        {"title": "S7 - Suitable for AIM authorization", "categories": []}]}, 
+
+    {"title": "Published (contractual)", "categories": [ 
+        {"title": "A1 - Accepted stage 1", "categories": []}, 
+        {"title": "A2 - Accepted stage 2", "categories": []}, 
+        {"title": "A3 - Accepted stage 3", "categories": []}, 
+        {"title": "A4 - Accepted stage 4", "categories": []}, 
+        {"title": "A5 - Accepted stage 5", "categories": []}, 
+        {"title": "A6 - Accepted stage 6", "categories": []}]}, 
+
+    {"title": "Archive", "categories": []}, 
+
+    {"title": "Reference data", "categories": []}]}
