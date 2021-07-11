@@ -7,12 +7,12 @@ Therefore, the Group feature is seen as a single ISO 19650 CDE in which items ar
 ![Fingure](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/fig/ArcGISOnlineVsISO.png) .  
 
 #### This repo contains the following files:
-* asd
-* asd
+* ArcGIS_GroupAs_ISO19650_CDE.py # Python file contains many functions to retrieve and update in ArcGIS Platform (all functins tested on ArcGIS Online) 
+* main.py # main python file that contains the main functionalities created for the purpose of this thesis. More details in functionalities section
 * asd
 * 
 
-#### The following functionalities are created:
+#### Functionalities
 
 
 
