@@ -15,6 +15,26 @@ Therefore, the Group feature is seen as a single ISO 19650 CDE in which items ar
 * LICENSE 
 * Fig folders 
 
+#### Usage 
+There are two methods:
+
+##### update the parameters in main.py file 
+1- Required parameters  
+  
+* token to access permision to AcrGIS protal
+token           = r""
+* Your ArcGIS username 
+userName        = " " \# e.g "khoz_esrinederland"
+
+2- Optional parameters
+
+* Portal url (defaul arcgis online)
+JSONportal_URL  = r"https://www.arcgis.com"
+* defaul ISO 19650 standards for metadata (set on "True" and configues your own statuses in json file)  
+default_ISO19650BritishAnnex = False
+
+##### follow the instruction for each function [main functionalities](#functionalities)
+   
 #### Functionalities
 ##### function 1 "ISO 19650 group"
 creating group with ISO 19650 based structure  
@@ -38,4 +58,4 @@ This function does the following when it runs:
 * Add comments that shows **state to state** and ask for comment from the user to add with the actions. This is used for version history control of items' workflows. 
 * Add tag of the pushed-to state and remove the tag of the current state from tags (this is importatnt for filtering items according to the state they are at in the Hub Page).  
 
-#### Usage
+
