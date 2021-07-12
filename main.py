@@ -5,30 +5,29 @@ import ArcGIS_GroupAs_ISO19650_CDE
 
 
 if __name__ == '__main__':
-    # defaul ISO 19650 standards for metadata (set on "False")
-    default_ISO19650BritishAnnex = False
-    # token to access permision to AcrGIS protal     
+    ############
+    ############ required parameters
+    ################################
+    # token to access permision to AcrGIS protal
     token           = r""
-    # Group ID if you are using an existing one (you might need to use function 1 and create a group first then add the Group ID here)
-    GroupID         = r"38d66a69c5e5457a90dcf0970e4d215f"
     # Your ArcGIS username 
-    userName        = r"alhoz_esrinederland"
-    # Item ID of the added items (this might change per function used. 
-    ItemID          = r""
+    userName        = " " # e.g "khoz_esrinederland"
     
+    ############ Optional parameters
+    ################################
     # Portal url (defaul arcgis online)
     JSONportal_URL  = r"https://www.arcgis.com"
-    
+    # defaul ISO 19650 standards for metadata (set on "True" and configues your own statuses in json file)
+    default_ISO19650BritishAnnex = False
     
    
     # # getting the data (iso 19650 structure/categories (state & status)) from the json file
     import os 
     dir_path = os.path.dirname(os.path.realpath(__file__))
     jsonData = open (dir_path + r"/ISOCategories.json",)
-    if default_ISO19650BritishAnnex is True:
+    if not default_ISO19650BritishAnnex is True:
         IsoCategories = [json.load(jsonData)]
         
-    metadat         = r"Revision: P.00.00, Approved: False, Last updated by: username, Container classification: ____"
     import sys 
     ##### function 1 ##############
     # creating group ISO 19650 based structured
