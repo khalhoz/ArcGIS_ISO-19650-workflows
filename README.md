@@ -41,7 +41,8 @@ This method is more straightforward as the required parameters are automatically
 creating group with ISO 19650 based structure  
 This function can be used for creating new ISO 19650 based goup (or structuring an existing one). This is done using Group Categories feature (object of represnting json file of a group) which is a feature (JSON object) used to filter the items in a group, e.g each item can be assigned one of the categories and filtered out accordingly. 
 It adds the categories WIP, shared, published etc to the created group according to the British national annex of ISO 19650 standards, see default ISO 19650 cagegories in the [JSON](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/ISOCategories.json) file if you desire to make changes on **status categories**. Example of the ISO 19650 categories in a group  
-In the command prompt, provide the parameters _**ISO 19650 group**_ either **new** with **title** or **existing** with **GroupID** 
+In the command prompt, provide the parameters _**ISO 19650 group**_ either **new** with **title** or **existing** with **GroupID**  
+example:  
 > "Python.exe" "path_to_this_main_file/main.py" "ISO 19650 group" "new/existing" "Title/GroupID" "Description (optional)"   
 
 here is an example of how the categories are configured in a group as a CDE  
@@ -51,7 +52,8 @@ here is an example of how the categories are configured in a group as a CDE
 #### function 2 "initialize metadata"
 update items in a group with initail metadata all items/one item.  
 After adding items to the created ISO 19650 based group, this function initiate metadata of an item (or all items). This function addes the metadata according to ISO 19650 requirements in the field "snippet" (brief description over an item field). Example metadata of the [json response](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/fig/metadataJSONResponse.PNG) and the UI of the item  
-In the command prompt, provide the parameters _**"initialize metadata"**_ either **all** or **itemID**  **groupID** **ContainerClassification**  
+In the command prompt, provide the parameters _**initialize metadata**_ either **all** or **itemID**  **groupID** **ContainerClassification**  
+example:  
 > "Python.exe" "path_to_this_main_file/main.py" "initialize metadata" "all/itemID" "groupID" "Architecture(optional)"   
 
 here is an example of how metadata placed in snippet field of an item looks like  
@@ -67,6 +69,7 @@ This function does the following when it runs:
 * Add tag of the pushed-to state and remove the tag of the current state from tags (this is importatnt for filtering items according to the state they are at in the Hub Page).  
 
 In the command prompt, provide the parameters _**"Push"**_ **ItemID** **gorupID**  **State** **Status**  
+example:  
 > "Python.exe" "path_to_this_main_file/main.py" "Push" "ItemID" "gorupID" "Published (contractual)" "A1 - Accepted stage 1"
 
 
