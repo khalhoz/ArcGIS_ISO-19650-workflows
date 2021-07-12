@@ -31,8 +31,8 @@ This method is more straightforward as the required parameters are automatically
     * Portal url (defaul arcgis online) should be changed if using enterprise
 **JSONportal_URL**  = r"https://www.arcgis.com"  
 * Optional parameters
-    * defaul ISO 19650 standards for metadata (set on "True" and configues your own statuses in json file)  
-    **default_ISO19650BritishAnnex** = False
+    * defaul ISO 19650 standards for metadata (set on "True" and configure your own statuses in json file)  
+**default_ISO19650BritishAnnex** = False
 
 ###### follow the instruction for each function [main functionalities](#functionalities)
    
