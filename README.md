@@ -4,7 +4,7 @@ This repository is the resulted work for my thesis on the topic _**The role of W
 The created functionalities can be utilized to support information workflows aligned with ISO 19650 standards in ArcGIS platform.
 Therefore, the Group feature is seen as a single ISO 19650 CDE in which items are considered information containers. The workflow are tested in ArcGIS Online, however, they should be fully functional in ArcGIS Enterprise 
 
-![Fingure](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/fig/ArcGISOnlineVsISO.png) .  
+![Figure](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/fig/ArcGISOnlineVsISO.png).  
 
 #### This repo contains the following files:
 * This **readme.md** file. 
@@ -19,8 +19,23 @@ Therefore, the Group feature is seen as a single ISO 19650 CDE in which items ar
 ##### function 1 "ISO 19650 group"
 creating group with ISO 19650 based structure  
 This function can be used for creating new ISO 19650 based goup (or structuring an existing one). This is done using Group Categories feature (object of represnting json file of a group) which is a feature (JSON object) used to filter the items in a group, e.g each item can be assigned one of the categories and filtered out accordingly. 
-It adds the categories WIP, shared, published etc to the created group according to the British national annex of ISO 19650 standards, see default ISO 19650 cagegories in the [JSON](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/ISOCategories.json) file if you desire to make changes on **status categories**
+It adds the categories WIP, shared, published etc to the created group according to the British national annex of ISO 19650 standards, see default ISO 19650 cagegories in the [JSON](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/ISOCategories.json) file if you desire to make changes on **status categories**. Example of the ISO 19650 categories in a group  
+
+![](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/fig/CategoriesStatesStatusExample.PNG)
+
 ##### function 2 "initialize metadata"
-update items in a group with initail metadata all items/one item
+update items in a group with initail metadata all items/one item.  
+After adding items to the created ISO 19650 based group, this function initiate metadata of an item (or all items). This function addes the metadata according to ISO 19650 requirements in the field "snippet" (brief description over an item field). Example metadata of the [json response](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/fig/metadataJSONResponse.PNG) and the UI of the item  
+
+![](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/fig/MetadataItemExample.PNG).
+
+
+##### Function 3 "Push" function 
+Push an item from/to one of the states WIP, Shared, or Published with a specified status (S0, S1, etc) have a look at the [JSON](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/ISOCategories.json) file for viewing and changing the status if you desire to.
+This function does the following when it runs:
+* Change the groupCategories (state and status) of the item (information container) provided 
+* Updates the **revision**, **Approved** and **last updated by**, of metadata accordingly.
+* Add comments that shows **state to state** and ask for comment from the user to add with the actions. This is used for version history control of items' workflows. 
+* Add tag of the pushed-to state and remove the tag of the current state from tags (this is importatnt for filtering items according to the state they are at in the Hub Page).  
 
 #### Usage
