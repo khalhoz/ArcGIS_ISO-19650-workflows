@@ -15,7 +15,7 @@ Therefore, the Group feature is seen as a single ISO 19650 CDE in which items ar
 * LICENSE 
 * Fig folders 
 
-#### Usage 
+### Usage 
 There are two ways:
 ##### 1- Using this [Python Notebook](https://esrinederland.maps.arcgis.com/home/notebook/notebook.html?id=1325cacd64164187a7888b83d2399318)  
 This method is more straightforward as the required parameters are automatically derived from the portal, all further instructions are to find in the notebook.
@@ -37,7 +37,7 @@ default_ISO19650BritishAnnex = False
 
 ###### follow the instruction for each function [main functionalities](#functionalities)
    
-#### Functionalities
+### Functionalities
 ##### function 1 "ISO 19650 group"
 creating group with ISO 19650 based structure  
 This function can be used for creating new ISO 19650 based goup (or structuring an existing one). This is done using Group Categories feature (object of represnting json file of a group) which is a feature (JSON object) used to filter the items in a group, e.g each item can be assigned one of the categories and filtered out accordingly. 
