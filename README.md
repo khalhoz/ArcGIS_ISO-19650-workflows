@@ -16,25 +16,26 @@ Therefore, the Group feature is seen as a single ISO 19650 CDE in which items ar
 * Fig folders 
 
 #### Usage 
-There are two methods:
+There are two ways:
+##### 1- Using this [Python Notebook](https://esrinederland.maps.arcgis.com/home/notebook/notebook.html?id=1325cacd64164187a7888b83d2399318)  
+This method is more straightforward as the required parameters are automatically derived from the portal, all further instructions are to find in the notebook.
 
-
-##### update the parameters in main.py file 
-1- Required parameters  
+##### 2- Using the Command Prompt
+###### update the parameters in main.py file 
+* Required parameters  
   
-* token to access permision to AcrGIS protal
-token           = r""
-* Your ArcGIS username 
-userName        = " " \# e.g "khoz_esrinederland"
+    * token for accessing the AcrGIS protal
+token           = "" 
+    * Your ArcGIS username 
+userName        = " " # e.g "kalhoz_esrinederland"
 
-2- Optional parameters
-
-* Portal url (defaul arcgis online)
+* Optional parameters
+    * Portal url (defaul arcgis online)
 JSONportal_URL  = r"https://www.arcgis.com"
-* defaul ISO 19650 standards for metadata (set on "True" and configues your own statuses in json file)  
+    * defaul ISO 19650 standards for metadata (set on "True" and configues your own statuses in json file)  
 default_ISO19650BritishAnnex = False
 
-##### follow the instruction for each function [main functionalities](#functionalities)
+###### follow the instruction for each function [main functionalities](#functionalities)
    
 #### Functionalities
 ##### function 1 "ISO 19650 group"
