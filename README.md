@@ -17,11 +17,11 @@ Therefore, the Group feature is seen as a single ISO 19650 CDE in which items ar
 
 ### Usage 
 There are two ways:
-##### 1- Using this [Python Notebook](https://esrinederland.maps.arcgis.com/home/notebook/notebook.html?id=1325cacd64164187a7888b83d2399318)  
+##### > Using this [Python Notebook](https://esrinederland.maps.arcgis.com/home/notebook/notebook.html?id=1325cacd64164187a7888b83d2399318)  
 This method is more straightforward as the required parameters are automatically derived from the portal, all further instructions are to find in the notebook.
 
-##### 2- Using the Command Prompt
-###### update the parameters in main.py file 
+##### > Using the Command Prompt
+###### update the required parameters in _**main.py**_ file 
 * Required parameters  
   
     * token for accessing the AcrGIS protal
@@ -38,26 +38,33 @@ default_ISO19650BritishAnnex = False
 ###### follow the instruction for each function [main functionalities](#functionalities)
    
 ### Functionalities
-##### function 1 "ISO 19650 group"
+#### function 1 "ISO 19650 group"
 creating group with ISO 19650 based structure  
 This function can be used for creating new ISO 19650 based goup (or structuring an existing one). This is done using Group Categories feature (object of represnting json file of a group) which is a feature (JSON object) used to filter the items in a group, e.g each item can be assigned one of the categories and filtered out accordingly. 
 It adds the categories WIP, shared, published etc to the created group according to the British national annex of ISO 19650 standards, see default ISO 19650 cagegories in the [JSON](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/ISOCategories.json) file if you desire to make changes on **status categories**. Example of the ISO 19650 categories in a group  
+In the command prompt, provide the parameters _**ISO 19650 group**_ either **new** with **title** or **existing** with **GroupID** 
+> "Python.exe" "path_to_this_main_file/main.py" "ISO 19650 group" "new/existing" "Title/GroupID" "Description (optional)"  
 
 ![](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/fig/CategoriesStatesStatusExample.PNG)
 
-##### function 2 "initialize metadata"
+#### function 2 "initialize metadata"
 update items in a group with initail metadata all items/one item.  
 After adding items to the created ISO 19650 based group, this function initiate metadata of an item (or all items). This function addes the metadata according to ISO 19650 requirements in the field "snippet" (brief description over an item field). Example metadata of the [json response](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/fig/metadataJSONResponse.PNG) and the UI of the item  
+In the command prompt, provide the parameters _**"initialize metadata"**_ either **all** or **itemID**  **groupID** **ContainerClassification**  
+> "Python.exe" "path_to_this_main_file/main.py" "initialize metadata" "all/itemID" "groupID" "Architecture(optional)"  
 
 ![](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/fig/MetadataItemExample.PNG).
 
 
-##### Function 3 "Push" function 
+#### Function 3 "Push" function 
 Push an item from/to one of the states WIP, Shared, or Published with a specified status (S0, S1, etc) have a look at the [JSON](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/ISOCategories.json) file for viewing and changing the status if you desire to.
 This function does the following when it runs:
 * Change the groupCategories (state and status) of the item (information container) provided 
 * Updates the **revision**, **Approved** and **last updated by**, of metadata accordingly.
 * Add comments that shows **state to state** and ask for comment from the user to add with the actions. This is used for version history control of items' workflows. 
 * Add tag of the pushed-to state and remove the tag of the current state from tags (this is importatnt for filtering items according to the state they are at in the Hub Page).  
+
+In the command prompt, provide the parameters _**"Push"**_ **ItemID** **gorupID**  **State** **Status**  
+> "Python.exe" "path_to_this_main_file/main.py" "Push" "ItemID" "gorupID" "Published (contractual)" "A1 - Accepted stage 1"
 
 
