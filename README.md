@@ -2,7 +2,7 @@
 
 This repository contains proof of concept funcationalities for my thesis on the topic _**The role of Web GIS in project information management aligned with ISO 19650 standards**_. 
 The funcationalities are implemented using ArcGIS [Rest API](https://developers.arcgis.com/rest/) and Python as a scripting language.
-The created functionalities can be utilized to support information workflows aligned with ISO 19650 standards in ArcGIS platform.
+The created functionalities can be utilized to support information workflows aligned with ISO 19650 standards (UK national annex) in ArcGIS platform.
 Therefore, the Group feature is seen as a single ISO 19650 CDE in which items are considered information containers (see figure below). 
 For the implementation, the UK national annex conventions are used. 
 The functionalities are tested on ArcGIS Online platform, however, they should be fully functional in ArcGIS Enterprise. 
