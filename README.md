@@ -78,4 +78,5 @@ In the command prompt, provide the parameters _**"Push"**_ **ItemID** **gorupID*
 example:  
 > "Python.exe" "path_to_this_main_file/main.py" "Push" "ItemID" "gorupID" "Published (contractual)" "A1 - Accepted stage 1"
 
-
+#### function 4 "aprove" function
+This function approves the item by changing **Approved: False** to **Approved: True**. It also add a comment: Approved by **UserName**.
