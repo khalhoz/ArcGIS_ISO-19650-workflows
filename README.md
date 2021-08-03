@@ -80,3 +80,13 @@ example:
 
 #### function 4 "aprove" function
 This function approves the item by changing **Approved: False** to **Approved: True**. It also add a comment: Approved by **UserName**.
+Returns a warning if the item had been approved. 
+In the command prompt, provide the parameters **_approve_** **ItemID**  
+example:  
+> "Python.exe" "path_to_this_main_file/main.py" "approve" "ItemID"  
+
+#### function 5 "makeReferenceData" function
+This function makes projects related data available for usage or referenecing. For example, items of the existing situation of a project or documents/instructions (items) on deliverables that should be read by the project team (delivery team).  
+In the command prompt, provide the parameters **_Make reference data_** **ItemID** **groupID** **ContainerClassification**
+example:  
+> "Python.exe" "path_to_this_main_file/main.py" "Make reference data" "ItemID" "groupID" "Architecture(optional)" 
