@@ -6,7 +6,7 @@ The created functionalities can be utilized to support information workflows ali
 Therefore, the Group feature is seen as a single ISO 19650 CDE in which items are considered information containers (see figure below). 
 For the implementation, the UK national annex conventions are used. 
 The functionalities are tested on ArcGIS Online platform, however, they should be fully functional in ArcGIS Enterprise. 
-The idea behind creating these functionalities is to be utilized in Web based application. 
+The idea behind creating these functionalities is to be utilized in Web-based applications. 
 An example of these applications is [ArcGIS Hub](https://hub.arcgis.com/), as part of the implementation [this Hub](https://hubiso-19650-example-esrinederland.hub.arcgis.com/) was created as template example of UI for information management workflows. 
 Moreover, a detailed description of the implementation is to find in this [StoryMap - The application of ISO 19650 standards in the ArcGIS Platform](https://storymaps.arcgis.com/stories/f973462663af453a92b14ff107621a4b/).
 
