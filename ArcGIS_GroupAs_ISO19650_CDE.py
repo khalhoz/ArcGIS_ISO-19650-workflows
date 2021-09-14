@@ -1,4 +1,4 @@
-from arcgis.gis import GIS
+
 import requests
 import json
 
@@ -28,13 +28,6 @@ IsoCategories = [{'title': 'Categories',
 
 {'title': 'Reference data', 'categories': []}]}]
 
-# assignin ISO using Python API
-def assignISO19650StatesAndStatus(group_id, categories = IsoCategories ):
-    # Authentication using ArcGIS Pro
-    gis = GIS("pro")
-    group = gis.groups.get(group_id)
-    group.categories.schema = categories
-    return group.categories.schema == categories
 
 # assignin ISO using REST API in python
 def assignISO19650StatesAndStatusRESTapi(AuthenticationToken , group,
