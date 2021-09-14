@@ -1,5 +1,4 @@
 
-from   arcgis.gis import GIS
 import json
 import ArcGIS_GroupAs_ISO19650_CDE
 
