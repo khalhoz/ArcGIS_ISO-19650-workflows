@@ -7,8 +7,8 @@ if __name__ == '__main__':
     ############
     ############ required parameters
     ################################
-    # token to access permision to AcrGIS protal
-    token           = r""
+    # token for access permision to AcrGIS protal 
+    token           = r"" # you can use generateToken function avaiable in ArcGIS_GroupAs_ISO19650_CDE.py file to get one 
     # Your ArcGIS username 
     userName        = " " # e.g "khoz_esrinederland"
     
