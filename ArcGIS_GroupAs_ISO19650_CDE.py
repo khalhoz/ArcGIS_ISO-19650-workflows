@@ -28,6 +28,30 @@ IsoCategories = [{'title': 'Categories',
 
 {'title': 'Reference data', 'categories': []}]}]
 
+# generate token function can be used once to get a token of your portal using rest api. 
+def generateToken(username, password, portalUrl):
+    headers = {'content-type': 'application/x-www-form-urlencoded', 'Host': 'www.arcgis.com', 'Content-Length': '[]' }
+    parameters = {'username': username,
+                  'password': password,
+                  'client': 'referer',
+                  'referer': portalUrl,
+                  'expiration': '60',
+                  'f': 'json'}
+    url = portalUrl + '/sharing/rest/generateToken?'
+    response = requests.post(url, data=parameters, headers=headers)
+
+    try:
+        jsonResponse = response.json()
+        if 'token' in jsonResponse:
+            return jsonResponse['token']
+        elif 'error' in jsonResponse:
+            print (jsonResponse['error']['message'])
+            for detail in jsonResponse['error']['details']:
+                print (detail)
+    except ValueError:
+        print('An unspecified error occurred.')
+        print(ValueError)
+
 
 # assignin ISO using REST API in python
 def assignISO19650StatesAndStatusRESTapi(AuthenticationToken , group,
