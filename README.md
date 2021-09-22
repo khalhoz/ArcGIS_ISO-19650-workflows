@@ -1,6 +1,6 @@
 # ArcGIS_ISO-19650-workflows
 
-This repository contains proof of concept funcationalities for my thesis on the topic _**The role of Web GIS in project information management aligned with ISO 19650 standards**_. 
+This repository contains proof of concept funcationalities for my thesis on the topic _**ISO 19650 standards in Web GIS for projects information management including GIS & BIM**_. 
 The funcationalities are implemented using ArcGIS [Rest API](https://developers.arcgis.com/rest/) and Python as a scripting language.
 The created functionalities can be utilized to support information workflows aligned with ISO 19650 standards (UK national annex) in ArcGIS platform.
 Therefore, the Group feature is seen as a single ISO 19650 CDE in which items are considered information containers (see figure below). 
