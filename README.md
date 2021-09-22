@@ -1,3 +1,6 @@
+### Credits (Attribution)
+For this work, I would like to express my great appreciation to Frank de Zoeten (content supervisor) & Niels van der Vaart for sharing their expertise on the field and the used platform/software; and enabling all kinds of research practicalities within the company. I would also like to thank Eelco Berghuis for sharing his knowledge and the collaboration on the innovation competition, which significantly supported this research. I would also like to thank Stelios Vitalis & Dr. Francesca Noardo for their supervision of the scientific approach to this research.
+
 # ArcGIS_ISO-19650-workflows
 
 This repository contains proof of concept funcationalities for my thesis on the topic _**The role of Web GIS in project information management aligned with ISO 19650 standards**_. 
