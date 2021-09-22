@@ -9,6 +9,8 @@ The functionalities are tested on ArcGIS Online platform, however, they should b
 The idea behind creating these functionalities is to be utilized in Web-based applications. 
 An example of these applications is [ArcGIS Hub](https://hub.arcgis.com/), as part of the implementation [this Hub](https://hubiso-19650-example-esrinederland.hub.arcgis.com/) was created as template example of UI for information management workflows. 
 Moreover, a detailed description of the implementation is to find in this [StoryMap - The application of ISO 19650 standards in the ArcGIS Platform](https://storymaps.arcgis.com/stories/f973462663af453a92b14ff107621a4b/).
+##### Credits (Attribution)
+For this work, I would like to express my great appreciation to Frank de Zoeten (content supervisor) & Niels van der Vaart for sharing their expertise on the field and the used platform/software; and enabling all kinds of research practicalities within the company. I would also like to thank Eelco Berghuis for sharing his knowledge and the collaboration on the innovation competition, which significantly supported this research. I would also like to thank Stelios Vitalis & Dr. Francesca Noardo for their supervision of the scientific approach to this research.
 
 ![Figure](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/fig/ArcGISOnlineVsISO.png).  
 
@@ -92,5 +94,3 @@ example:
 > "Python.exe" "path_to_this_main_file/main.py" "Make reference data" "ItemID" "groupID" "Architecture(optional)" 
 
 
-##### Credits (Attribution)
-For this work, I would like to express my great appreciation to Frank de Zoeten (content supervisor) & Niels van der Vaart for sharing their expertise on the field and the used platform/software; and enabling all kinds of research practicalities within the company. I would also like to thank Eelco Berghuis for sharing his knowledge and the collaboration on the innovation competition, which significantly supported this research. I would also like to thank Stelios Vitalis & Dr. Francesca Noardo for their supervision of the scientific approach to this research.
