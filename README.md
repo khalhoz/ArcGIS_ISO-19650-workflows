@@ -10,6 +10,8 @@ The idea behind creating these functionalities is to be utilized in Web-based ap
 An example of these applications is [ArcGIS Hub](https://hub.arcgis.com/), as part of the implementation [this Hub](https://hubiso-19650-example-esrinederland.hub.arcgis.com/) was created as template example of UI for information management workflows. 
 Moreover, a detailed description of the implementation is to find in this [StoryMap - ISO 19650 standards in the ArcGIS Platform](https://storymaps.arcgis.com/stories/f973462663af453a92b14ff107621a4b/).
 
+## [**Full thesis report**](https://repository.tudelft.nl/islandora/object/uuid%3A306f0b94-2827-4aa0-90df-66110ee5a484?collection=education)
+
 ![Figure](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/fig/ArcGISOnlineVsISO.png).  
 
 #### This repo contains the following files:
