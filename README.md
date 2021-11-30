@@ -23,7 +23,8 @@ Moreover, a detailed description of the implementation is to find in this [Story
 
 ### Usage 
 There are two ways:
-##### > Using this [Python Notebook](https://esrinederland.maps.arcgis.com/home/item.html?id=1325cacd64164187a7888b83d2399318)  
+##### > Using this [Python Notebook](https://github.com/khalhoz/ArcGIS_ISO-19650-workflows/blob/main/PythonNotebook.ipynb)
+Upload the file into the portal as a Python notebook item and use the functionalities directly in the portal to test them. 
 This method is more straightforward as the required parameters are automatically derived from the portal, all further instructions are to find in the notebook.
 
 ##### > Using the Command Prompt
